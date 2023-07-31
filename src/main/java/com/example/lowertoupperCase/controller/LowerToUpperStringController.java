@@ -9,7 +9,7 @@ public class LowerToUpperStringController {
 
 	@GetMapping("/{name}")
 	public String getString(@PathVariable String name) {
-		name = name.toUpperCase()+" verma";
+		name = name.toUpperCase()+" sharmaji";
 		return name;
 	}
 }
