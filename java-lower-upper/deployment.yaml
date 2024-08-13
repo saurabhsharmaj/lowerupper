@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: lower-upper
-          image: 192.168.1.21:8083/docker-hosted/lowerupper:1.0.45
+          image: 192.168.1.74:8083/docker-hosted/lowerupper:1.0.40
           ports:
             - containerPort: 8083
       imagePullSecrets:
@@ -27,7 +27,7 @@ metadata:
 spec:
   selector:
     app: java-lower-upper
-  type: LoadBalancer  
+  type: NodePort  
   ports:
     - protocol: TCP
       targetPort: 8083
