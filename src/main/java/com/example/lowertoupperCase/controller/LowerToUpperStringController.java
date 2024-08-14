@@ -12,4 +12,10 @@ public class LowerToUpperStringController {
 		name = name.toUpperCase()+" SHARMA V4.0";
 		return name;
 	}
+
+	@GetMapping("/health")
+	public String getHealth() {
+		
+		return "OK";
+	}
 }
