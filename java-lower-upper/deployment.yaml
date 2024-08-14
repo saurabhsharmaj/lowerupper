@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: lower-upper
-          image: 192.168.1.41:8083/docker-hosted/lowerupper:1.0.88
+          image: 192.168.1.41:8083/docker-hosted/lowerupper:1.0.89
           ports:
             - containerPort: 8083
       imagePullSecrets:
@@ -33,6 +33,7 @@ spec:
       targetPort: 8083
       port: 8083
       nodePort: 30000
+
 
 
 
